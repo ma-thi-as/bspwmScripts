@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Establecer la variable de entorno DISPLAY
+export DISPLAY=:0.0
+
+# Directorio que contiene la información de la batería
+BATTERY_DIR="/sys/class/power_supply/BAT0/"
+
+# Leer los valores de charge_now y charge_full
+charge_now=$(cat "$BATTERY_DIR/charge_now")
+charge_full=$(cat "$BATTERY_DIR/charge_full")
+
+# Calcular el porcentaje de la batería
+percentage=$((charge_now * 100 / charge_full))
+
+#status Charging/Dis..
+status=$(cat /sys/class/power_supply/BAT0/status)
+
+if [ "$status" == "Discharging" ];then
+    if [ "$percentage" -lt 20 ]; then
+        echo "$(notify-send 'Warning: Low battery' $percentage)"
+    fi
+else
+    if [ "$percentage" -gt 97 ]; then
+        echo "$(notify-send 'Charge completed')"
+    fi
+fi
+
+
+echo "OK"
