@@ -8,11 +8,12 @@
         
 _File ~/.config/sxhkd/sxhkdrc_:
 
-XF86MonBrightnessUp
+        XF86MonBrightnessUp
 
         /home/mat/.config/bspwm/scripts/brightness +1000
 
-XF86MonBrightnessDown
+
+        XF86MonBrightnessDown
 
         /home/mat/.config/bspwm/scripts/brightness -1000
 
