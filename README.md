@@ -6,13 +6,13 @@
         sudo chown :mat /sys/class/backlight/{your_card}/brightness
         sudo chmod g+rw /sys/class/backlight/{your_card}/brightness
         
-_File ~/.config/sxhkd/sxhkdrc_: \n
+_File ~/.config/sxhkd/sxhkdrc_:
 
 XF86MonBrightnessUp
 
         /home/mat/.config/bspwm/scripts/brightness +1000
 
-XF86MonBrightnessDown \n
+XF86MonBrightnessDown
 
         /home/mat/.config/bspwm/scripts/brightness -1000
 
