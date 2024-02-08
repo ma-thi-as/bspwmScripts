@@ -16,7 +16,7 @@ percentage=$((charge_now * 100 / charge_full))
 #status Charging/Dis..
 status=$(cat /sys/class/power_supply/BAT0/status)
 
-if [ "$status" == "Discharging" ];then
+if [ "$status" == "Discharging" ]; then
     if [ "$percentage" -lt 20 ]; then
         echo "$(notify-send 'Warning: Low battery' $percentage)"
     fi
@@ -27,4 +27,4 @@ else
 fi
 
 
-echo "OK"
+echo 1
