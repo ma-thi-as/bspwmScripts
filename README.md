@@ -1,10 +1,9 @@
-_**BSPMW SCRIPTS**_
+#_**BSPMW SCRIPTS**_
 
 
 For brightness file is necessary add to sudoers the command "tee" 
 
-_File: ~/.config/sxhkd/sxhkdrc_
-# Brightness script
+_File ~/.config/sxhkd/sxhkdrc_:
 XF86MonBrightnessUp
         /home/mat/.config/bspwm/scripts/brightness +1000
 
