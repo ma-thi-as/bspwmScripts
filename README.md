@@ -1,7 +1,7 @@
 # _**BSPMW SCRIPTS**_
 
 
-**Recomendations: change the group user of /sys/class/backlight/intel_backlight/brightness to your user group**\n
+**Recomendations: change the group user of /sys/class/backlight/intel_backlight/brightness to your user group**
 
         sudo chown :mat /sys/class/backlight/{your_card}/brightness
         sudo chmod g+rw /sys/class/backlight/{your_card}/brightness
