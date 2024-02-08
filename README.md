@@ -17,9 +17,8 @@ XF86MonBrightnessDown
         /home/mat/.config/bspwm/scripts/brightness -1000
 
 
-_
-For battery file is necessary add to crontab
-example change first * for the minutes_:
+_For battery file is necessary add to crontab -e
+example change first * for the minutes_
 
         * * * * * /home/mat/.config/bspwm/scripts/batt
         
