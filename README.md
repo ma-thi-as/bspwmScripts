@@ -10,12 +10,12 @@ _File ~/.config/sxhkd/sxhkdrc_:
 
         XF86MonBrightnessUp
 
-                /home/mat/.config/bspwm/scripts/brightness +1000
+                        /home/mat/.config/bspwm/scripts/brightness +1000
 
 
         XF86MonBrightnessDown
 
-                /home/mat/.config/bspwm/scripts/brightness -1000
+                        /home/mat/.config/bspwm/scripts/brightness -1000
 
 
 _For battery file is necessary add to crontab -e
