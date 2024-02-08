@@ -1,4 +1,4 @@
-#_**BSPMW SCRIPTS**_
+# _**BSPMW SCRIPTS**_
 
 
 For brightness file is necessary add to sudoers the command "tee" 
