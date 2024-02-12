@@ -2,9 +2,10 @@
 
 
 **Recomendations: change the group user and perms of /sys/class/backlight/{your_card}/brightness to your user group**
-
-        sudo chown :mat /sys/class/backlight/{your_card}/brightness
-        sudo chmod g+rw /sys/class/backlight/{your_card}/brightness
+        
+        if u have intel_backlight in the command """ls /sys/class/backlight"""
+        sudo chown :mat /sys/class/backlight/intel_backlight/brightness
+        sudo chmod g+rw /sys/class/backlight/intel_backlight/brightness
         
 _File ~/.config/sxhkd/sxhkdrc_:
 
